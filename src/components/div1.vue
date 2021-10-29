@@ -13,31 +13,49 @@
     <div class="col-md-12">
       <img class="graph" src="../assets/graph.png" alt="" />
     </div>
-    <div class="row container">
-      <div class="col-md-6 py-5">
-        <img class="bottleimg" src="../assets/Image.png" alt="" />
-      </div>
-      <div class="col-md-6 hh">
-        <div class="main">
-          <h3>Finasteride</h3>
-          <p class="disc">
-            For personalised advice, you are welcome to arrange a video
-            consultation with a trained consultant; or to use our live
-            assistance for guidance while browsing online.
-          </p>
-        </div>
-        <div class="col-md-6 main row">
-          <button class="col-md-3 treatbtn">View treatment details</button>
-          <button class="col-md-3 treatbtn">
-            view treatment history
-            <img
-              class="btnslide"
-              src="../assets/slidemenu.png"
-              alt="slidemenu"
-            />
-          </button>
-        </div>
-      </div>
+
+    <div>
+      <b-carousel
+        id="carousel-1"
+        :interval="0"
+        controls
+        background="#00000"
+        img-width="1024"
+        img-height="480"
+      >
+        <b-carousel-slide>
+          <template #img>
+            <div class="row container">
+              <div class="col-md-6 py-5">
+                <img class="bottleimg" src="../assets/Image.png" alt="" />
+              </div>
+              <div class="col-md-6 hh">
+                <div class="main">
+                  <h3>Finasteride</h3>
+                  <p class="disc">
+                    For personalised advice, you are welcome to arrange a video
+                    consultation with a trained consultant; or to use our live
+                    assistance for guidance while browsing online.
+                  </p>
+                </div>
+                <div class="col-md-6 main row">
+                  <button class="col-md-3 treatbtn">
+                    View treatment details
+                  </button>
+                  <button class="col-md-3 treatbtn">
+                    view treatment history
+                    <img
+                      class="btnslide"
+                      src="../assets/slidemenu.png"
+                      alt="slidemenu"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </template>
+        </b-carousel-slide>
+      </b-carousel>
     </div>
   </div>
 </template>
@@ -45,6 +63,9 @@
 <script>
 export default {
   components: {},
+
+
+
 };
 </script>
 <style lang="scss">
@@ -134,4 +155,5 @@ export default {
 .hh .row {
   width: 100%;
 }
+
 </style>

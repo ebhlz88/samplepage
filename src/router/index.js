@@ -1,13 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+//import navtest from "../components/navtest.vue"
 
 Vue.use(VueRouter);
 
 const routes = [
   // {
-  //   path: "/",
-  //   name: "Home",
-  //   component: Home,
+  //   path: "/qq",
+  //   name: "navtest",
+  //   component: navtest,
   // },
 ];
 
